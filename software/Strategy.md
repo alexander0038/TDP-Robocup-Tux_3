@@ -21,19 +21,27 @@ The strategy module is responsible for deciding the robot's behavior based on se
 
 The robot operates according to a **state-based system**, switching between the following main states:
 
+    GET_BALL
+    SEARCH_FOR_ENEMY_GOAL
+    TURN_TO_ENEMY_GOAL
+    DRIVE_TOWARDS_GOAL
+    RESCUE
+
 1. **GET_BALL**  
    - The robot searches for the ball using infrared sensors (TSSP6038TR).  
-   - If the ball is detected, the roboter will drive towards it.  
+   - If the ball is detected, the roboter will drive towards it.
+  
+2. **SEACH_FOR_ENEMY_GOAL**
+   - The robot searches for the goal, using the Pixy camera.
 
-3. **PLAN_SHOT**  
-   - When positioned correctly, the robot evaluates the goal location and determines the best angle and timing for a shot.  
-   - Pixy2 camera and orientation data guide the alignment.  
+4. **TURN_TO_ENEMY_GOAL**  
+   - When the robot detects the goal, it turns towards it.
 
-4. **KICK/SHOOT**  
-   - Executes the kicking mechanism using the Infineon BTN8982TA driver.  
-   - Dribbler motor (GA16Y-050-CE) adjusts ball control during the shot.  
+5. **DRIVE_TOWARDS_GOAL**  
+   - If the robot is turned directly to the goal, it drives forward.
+   - If the robot isn't directly turned toward the goal it uses the Ultrasonic Sensors
 
-5. **RESCUE / STUCK**  
+6. **RESCUE**  
    - If the robot detects that it is stuck (via sensor readings or lack of movement), a recovery routine is triggered.  
    - This includes reversing, turning, and repositioning to continue play.
 
