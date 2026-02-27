@@ -113,7 +113,7 @@ void setup() {
 
 
   CoRoSoN_Init();
-  //pixy.Init();
+  pixy.Init();
 
   SetI2CLEDColor(I2C_MODULE_1, LEFT, RED);
   SetI2CLEDColor(I2C_MODULE_1, RIGHT, RED);
