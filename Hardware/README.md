@@ -63,7 +63,7 @@ Key components:
 | Pixy2                     | Goal detection and image processing      |
 | Compass CMPS14            | Orientation stabilization                |
 | Light barrier & IR Sensors | Ball detection and possession           |
-| DFRobot_URM09             | detecting distance to the wall           |
+| DFRobot_URM09             | Detecting distance to the wall           |
 
 The mainboard integrates power distribution and signal routing for all motors and sensors.
 
