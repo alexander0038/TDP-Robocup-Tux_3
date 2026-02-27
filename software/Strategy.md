@@ -29,7 +29,7 @@ The robot operates according to a **state-based system**, switching between the 
    - The robot searches for the goal, using the Pixy camera.
 
 4. **TURN_TO_ENEMY_GOAL**  
-   - When the robot detects the goal, it turns towards it.
+   - When the robot detects the goal: turn towards it.
 
 5. **DRIVE_TOWARDS_GOAL**  
    - If the robot is turned directly to the goal, it drives forward.
