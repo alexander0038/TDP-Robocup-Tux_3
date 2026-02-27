@@ -4,7 +4,7 @@ This document describes the high-level strategy and decision-making system of Te
 
 ---
 
-## 🧠 1. Control Architecture
+## 1. Control Architecture
 
 The robot's software is organized around a **main control loop running at approximately 100 Hz**, combined with modular tasks for:
 
@@ -17,7 +17,7 @@ The strategy module is responsible for deciding the robot's behavior based on se
 
 ---
 
-## 🎯 2. High-Level States
+## 2. High-Level States
 
 The robot operates according to a **state-based system**, switching between the following main states:
 
