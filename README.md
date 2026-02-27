@@ -42,16 +42,6 @@ All software modules are documented in `software/README.md`, including file stru
 
 ---
 
-## Documentation
-
-All technical documentation is provided in this repository:
-
-- **Hardware Design:** `docs/hardware.md`  
-- **Software Overview:** `software/README.md`  
-- **Flowcharts and Diagrams:** `docs/images/`  
-
----
-
 ## Achievements
 
 - **2025:**  
