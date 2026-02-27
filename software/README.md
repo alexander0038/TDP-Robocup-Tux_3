@@ -6,10 +6,9 @@ This folder contains the complete software for the Tux_3 RoboCupJunior Entry Lea
 
 The software is structured into the following modules:
 
-- **main.ino** — Main control loop and initialization
-- **sensors.cpp / sensors.h** — Handles all sensor reading (IR TSSP6038, compass)
-- **movement.cpp / movement.h** — Motor control (Pololu drivetrain & dribbler)
-- **strategy.cpp / strategy.h** — High-level decision logic (attack/search/rescue)
+- **Main** — Main control loop and initialization
+- **Sensors** — Handles all sensor reading (DFRobot_URM09, compass)
+- **Strategy** — High-level decision logic (attack/search/rescue)
 
 The ESP32 runs a main loop with approx. 100 Hz frequency. Within this loop:
 1. Sensors are updated
