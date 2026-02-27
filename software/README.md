@@ -2,12 +2,12 @@
 
 This folder contains the complete software for the Tux_3 RoboCupJunior Entry League robot.
 
-## 🧠 Architecture
+## Architecture
 
 The software is structured into the following modules:
 
 - **main.ino** — Main control loop and initialization
-- **sensors.cpp / sensors.h** — Handles all sensor reading (IR TSSP6038, light barrier, compass)
+- **sensors.cpp / sensors.h** — Handles all sensor reading (IR TSSP6038, compass)
 - **movement.cpp / movement.h** — Motor control (Pololu drivetrain & dribbler)
 - **strategy.cpp / strategy.h** — High-level decision logic (attack/search/rescue)
 
@@ -16,20 +16,20 @@ The ESP32 runs a main loop with approx. 100 Hz frequency. Within this loop:
 2. State decisions are evaluated
 3. Movement commands executed
 
-## 🧪 Dependencies
+## Dependencies
 
-- CoRoSoN Software
+- CoRoSoN Software (https://github.com/ItzJannis/CoRoSoN-Package_Draft)
 - ESP32 Arduino Core
 - Pixy2 library
 - Motor driver interfaces
 
-## 📌 How to Run
+## How to Run
 
 1. Open in Arduino IDE
 2. Select ESP32 board
 3. Upload `main.ino`
 
-## 🧠 Logic Summary
+## Logic Summary
 
 The software implements a state-based decision system:
 - **GET_BALL**
@@ -40,7 +40,7 @@ The software implements a state-based decision system:
 
 Each state has its own behavior function (see strategy.cpp).
 
-## 🔍 Example Code Snippets
+## Example Code Snippets
 
 ```cpp
 if (irRing.BallSeen) {
