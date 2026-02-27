@@ -43,6 +43,7 @@ Tux_3 integrates multiple sensors for perception and field awareness:
 - **CMPS14 compass module** — provides orientation feedback for navigation.
 - **Pixy2 camera** — detects goal positions and supports tactical decision-making.
 - **Light barrier system** — monitors ball possession during dribbling.
+- **DFRobot_URM09** — detects distance
 
 All sensors are securely mounted on the 3D-printed chassis to ensure stability and minimize interference.
 
@@ -62,6 +63,7 @@ Key components:
 | Pixy2                     | Goal detection and image processing      |
 | Compass CMPS14            | Orientation stabilization                |
 | Light barrier & IR Sensors | Ball detection and possession           |
+| DFRobot_URM09             | detecting distance to the wall           |
 
 The mainboard integrates power distribution and signal routing for all motors and sensors.
 
