@@ -113,18 +113,3 @@ The hardware design of Tux_3 follows four key principles:
 4. Performance — optimized weight distribution and sensor placement
 
 By combining custom 3D-printed mechanics with carefully selected electronic components, the robot achieves stable and reliable performance within the Entry League framework.
-
----
-
-## 7. Visual Documentation
-
-The following diagrams are recommended:
-
-- Top view of chassis layout
-- Side view showing dribbler and kicker alignment
-- Sensor placement diagram
-- Wiring overview
-
-Example:
-
-![Chassis Layout](figures/chassis_layout.png)
