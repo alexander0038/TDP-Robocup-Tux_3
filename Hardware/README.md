@@ -1,7 +1,7 @@
 # Hardware Overview — Tux_3
 
 This document describes the complete hardware architecture of the Tux_3 RoboCupJunior Entry League robot.
-
+ 
 ---
 
 ## 1. Mechanical Design
