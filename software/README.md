@@ -9,6 +9,7 @@ The software is structured into the following modules:
 - **Main** — Main control loop and initialization
 - **Sensors** — Handles all sensor reading (DFRobot_URM09, compass)
 - **Strategy** — High-level decision logic (attack/search/rescue)
+  **→ Flowchart**
 
 The ESP32 runs a main loop with approx. 100 Hz frequency. Within this loop:
 1. Sensors are updated
