@@ -1,88 +1,130 @@
 # Hardware Overview — Tux_3
 
-This folder documents the complete hardware design of the Tux_3 RoboCupJunior Entry League robot.
+This document describes the complete hardware architecture of the Tux_3 RoboCupJunior Entry League robot.
 
 ---
 
 ## 1. Mechanical Design
 
-The chassis and structural components of Tux_3 are fully custom and **3D-printed** using Autodesk Fusion. The design priorities were:
+The robot chassis is fully custom-designed and manufactured using 3D printing.  
+All structural components were designed in Autodesk Fusion and optimized for compactness, durability, and easy maintenance.
 
-- **Compactness:** All components fit tightly within the chassis to minimize space.
-- **Stability:** Low center of gravity for reliable ball control and collision resistance.
-- **Modularity:** Components can be replaced or adjusted without redesigning the entire robot.
-- **Precision:** Accurate positioning of sensors and actuators for reliable gameplay.
+Design goals included:
 
-All mechanical parts, including motor mounts and dribbler assemblies, are printed with durable materials suitable for repeated matches.
+- Low center of gravity for stable driving
+- Robust frame for collisions
+- Secure mounting positions for sensors
+- Easy access to electronics for repairs
+- Precise alignment of dribbler and kicker system
+
+The transition from LEGO construction (2025 season) to fully custom 3D-printed parts (2026 season) significantly improved mechanical stability and performance.
 
 ---
 
 ## 2. Drive System
 
-The robot moves omnidirectionally using three **Pololu 25Dx48L MP 12V motors**:
+Tux_3 uses a **two-motor differential drive system**.
 
-- Configured for stable movement and precise turning.
-- Controlled via **Infineon IFX9201SG motor drivers** on the mainboard.
-- Designed for responsive acceleration and deceleration to optimize ball handling.
+### Drive Motors
+- **Pololu 25Dx48L MP 12V motors**
+- Direct wheel mounting (no omni wheels)
+- Controlled via **Infineon IFX9201SG motor drivers**
 
----
+This configuration provides:
 
-## 3. Ball Handling & Kicking
+- Strong forward acceleration
+- Reliable turning behavior
+- Mechanical simplicity
+- High robustness in collisions
 
-- **Dribbler:** Powered by a **GA16Y-050-CE motor** for reliable ball control.
-- **Kicker:** Driven by **Infineon BTN8982TA** high-current driver for strong, precise kicks.
-- Both systems are mechanically aligned to ensure accurate ball trajectory.
-
----
-
-## 4. Sensors
-
-Tux_3 integrates multiple sensors for perception and field awareness:
-
-- **Vishay TSSP6038TR IR sensors** — detect the ball and assist with positioning.
-- **CMPS14 compass module** — provides orientation feedback for navigation.
-- **Pixy2 camera** — detects goal positions and supports tactical decision-making.
-- **Light barrier system** — monitors ball possession during dribbling.
-- **DFRobot_URM09** — detects distance
-
-All sensors are securely mounted on the 3D-printed chassis to ensure stability and minimize interference.
+The differential drive system was selected for reliability and mechanical efficiency within the Entry League constraints.
 
 ---
 
-## 5. Electronics / Mainboard
+## 3. Ball Handling and Kicking System
 
-The robot’s electronic core is a custom board built around an **ESP32 microcontroller**.  
+### Dribbler
+- Powered by a **GA16Y-050-CE motor**
+- Designed to maintain continuous ball contact
+- Positioned for stable ball control during forward movement
 
-Key components:
+### Kicker
+- Driven by an **Infineon BTN8982TA** high-current driver
+- Mechanically aligned with the dribbler
+- Designed for controlled and repeatable shooting
 
-| Component                 | Purpose                                  |
-|---------------------------|------------------------------------------|
-| ESP32                     | Main control, communication, decision logic |
-| Infineon IFX9201SG        | Motor drivers for drivetrain             |
-| Infineon BTN8982TA        | High-current driver for kicker           |
-| Pixy2                     | Goal detection and image processing      |
-| Compass CMPS14            | Orientation stabilization                |
-| Light barrier & IR Sensors | Ball detection and possession           |
-| DFRobot_URM09             | Detecting distance to the wall           |
+The combined dribbler-kicker system ensures controlled possession and accurate shots.
 
-The mainboard integrates power distribution and signal routing for all motors and sensors.
+---
+
+## 4. Sensor System
+
+To achieve reliable perception and orientation, the robot integrates the following sensors:
+
+### Ball Detection
+- **Vishay TSSP6038TR infrared sensors**
+- Used to detect the modulated IR signal emitted by the ball
+- Mounted to ensure consistent field coverage
+
+### Orientation
+- **CMPS14 compass module**
+- Provides stable heading reference
+- Enables consistent alignment toward the opponent goal
+
+### Goal Detection
+- **Pixy2 camera**
+- Used to detect the colored goals
+- Mounted at the front of the robot for optimal visibility
+
+### Ball Possession
+- Light barrier system
+- Detects when the ball is inside the dribbler mechanism
+
+### Obstacle / Distance Detection
+- **DFRobot_URM09**
+- Used for distance measurement
+- Supports wall detection and collision correction
+- Helps stabilize driving behavior near boundaries
+
+All sensors are firmly mounted within the 3D-printed chassis to reduce vibration and signal interference.
+
+---
+
+## 5. Electronics and Control Board
+
+The robot uses a custom electronic setup centered around:
+
+- **ESP32 microcontroller** as the main control unit
+- **Infineon IFX9201SG** motor drivers for drivetrain control
+- **Infineon BTN8982TA** for kicker actuation
+- Integrated power distribution for motors and sensors
+
+The electronic layout was designed to minimize cable length, reduce electrical noise, and allow fast maintenance during competitions.
 
 ---
 
 ## 6. Design Philosophy
 
-- **Reliability:** Mechanical and electrical design is robust under collisions and fast maneuvers.
-- **Maintainability:** Easy access to motors, sensors, and electronics for quick repairs.
-- **Performance:** Optimized layout ensures fast response to software commands.
-- **Team Collaboration:** Components are modular, allowing multiple team members to work simultaneously on assembly, tuning, or replacement.
+The hardware design of Tux_3 follows four key principles:
+
+1. Robustness — able to withstand collisions and intensive gameplay
+2. Simplicity — reduced mechanical complexity for higher reliability
+3. Modularity — components can be replaced quickly
+4. Performance — optimized weight distribution and sensor placement
+
+By combining custom 3D-printed mechanics with carefully selected electronic components, the robot achieves stable and reliable performance within the Entry League framework.
 
 ---
 
-## 7. Visual Overview
+## 7. Visual Documentation
 
-For better understanding, see the following diagrams (to be added):
+The following diagrams are recommended:
 
-- Chassis layout (top view, side view)
+- Top view of chassis layout
+- Side view showing dribbler and kicker alignment
 - Sensor placement diagram
-- Dribbler & kicker assembly diagram
-- Motor orientation diagram
+- Wiring overview
+
+Example:
+
+![Chassis Layout](figures/chassis_layout.png)
