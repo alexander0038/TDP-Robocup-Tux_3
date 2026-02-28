@@ -19,7 +19,7 @@ In 2026, the two teams merged under the name **Tux_3** and developed a fully cus
 The Tux_3 robot combines custom 3D-printed mechanical parts, precise motors, and multiple sensors for autonomous operation:
 
 - **Chassis:** 3D-printed, optimized for stability and compactness  
-- **Drive Motors:** 3 × Pololu 25Dx48L MP 12V  
+- **Drive Motors:** 2 × Pololu 25Dx48L MP 12V  
 - **Dribbler Motor:** GA16Y-050-CE  
 - **Motor Drivers:** Infineon IFX9201SG (drive), BTN8982TA (kicker)  
 - **Controller:** ESP32 Board  
