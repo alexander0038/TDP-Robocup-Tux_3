@@ -25,7 +25,10 @@ The robot operates according to a **state-based system**, switching between the 
    - The robot searches for the ball using infrared sensors (TSSP6038TR).  
    - If the ball is detected, the roboter will drive towards it.
   
-2. **SEACH_FOR_ENEMY_GOAL**
+2. **BACK_TO_OWN_GOAL**
+   - If the robot doesn't see the ball, it turns to towards the enemy goal and quickly drives backwards.
+  
+3. **SEACH_FOR_ENEMY_GOAL**
    - The robot searches for the goal, using the Pixy camera.
 
 4. **TURN_TO_ENEMY_GOAL**  
@@ -33,12 +36,12 @@ The robot operates according to a **state-based system**, switching between the 
 
 5. **DRIVE_TOWARDS_GOAL**  
    - If the robot is turned directly to the goal, it drives forward.
-   - If the robot isn't directly turned toward the goal it uses the Ultrasonic Sensors (DFRobot_URM09).
+   - If the robot isn't directly turned toward the goal it uses the Ultrasonic Sensors (DFRobot_URM09) to correct itself to the correct direction.
 
 6. **RESCUE**  
    - If the robot detects that it is stuck (via sensor readings or lack of movement), a recovery routine is triggered.  
    - This includes reversing, turning, and repositioning to continue play.
-
+  
 ---
 
 ## 3. Decision Flow
@@ -55,8 +58,9 @@ Decisions are made in the following order:
 1. Check if **stuck** → trigger RESCUE if necessary  
 2. Ball not seen → switch to BACK_TO_OWN_GOAL
 3. Detect ball → switch to GET_BALL
-4. Check goal visibility → switch to PLAN_SHOT  
-5. Ready to shoot → execute KICK/SHOOT  
+4. Check goal visibility → switch to SEARCH_FOR_ENEMY_GOAL  
+5. Goal found → switch to  TURN_TO_ENEMY_GOAL
+6. Directly turned to enemy goal → switch to DRIVE_TOWARDS_GOAL
 
 This priority ensures the robot always reacts to the most critical situation first.
 
