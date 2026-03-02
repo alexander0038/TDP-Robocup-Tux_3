@@ -83,7 +83,7 @@ More about software in `/software/README.md`
 
 ### 2025:
 - Berlin qualification: *2nd Place: Tux_3; 4th Place: Tux_4*
-- German Open Nuremberg: *8th Place: Tux_3; 12th Place: Tux_4*
+- German Open Nuremberg: *8th Place: Tux_3; 13th Place: Tux_4*
 
 ### 2026:
 - Berlin qualification: *2nd: Tux_3* 
