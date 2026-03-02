@@ -122,4 +122,4 @@ For the next season, the team plans to:
 
   - Use more teampower than before (if ’s even possible) 
 
-We hope that one day we compete in the WM and be the first place. What sounds like a dream might come true one day. 
+We hope that one day we compete in the World Championship and be the first place. What sounds like a dream might come true one day. 
