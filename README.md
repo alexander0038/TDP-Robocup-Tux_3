@@ -28,5 +28,5 @@ However, these losses and wins did not make us lose motivation; instead, we merg
 - Team picture: `/Tux_3.png`
 
 
-##### Special Thanks:
+#### Special Thanks:
 We want to thank Frank Knefel, who voluntarily spends his time to help us with the robot or stays longer at school for us to work on the robots.
