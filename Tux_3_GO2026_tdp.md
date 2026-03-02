@@ -52,7 +52,7 @@ More about the Hardware in: `/Hardware/README.md`
 
 ## Software 
 
-The software is structured around a high-frequency main control loop running on the ESP32. The system separates sensor acquisition, decision logic, and motor control into modular components. We got our program-base from the CoRoSoN-Kit (https://github.com/ItzJannis/CoRoSoN-Package_Draft), made by the BohleBots 
+The software is structured around a high-frequency main control loop running on the ESP32. The system separates sensor acquisition, decision logic, and motor control into modular components. We got our program-base from the CoRoSoN-Kit (https://github.com/ItzJannis/CoRoSoN-Package_Draft).
 
 Key characteristics: 
 
