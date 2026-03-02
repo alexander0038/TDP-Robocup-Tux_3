@@ -1,11 +1,11 @@
 # TEAM TUX_3 ROBOCUP PAGE
 
 ## General information about us:
-We are ***Tux_3***, a team from Rahden, a small town in North Rhine-Westphalia, near Bielefeld. Our team exists of Alexander Belov (Software, Team Captain), Toni Schürmann (Software), Max Harting (Hardware), Henning Baumgartner (Hardware). We compete in the Robocup Junior Soccer Entry for the second time.
+We are Tux_3, a team from Rahden, a small town in North Rhine-Westphalia near Bielefeld. Our team consists of Alexander Belov (Software, Team Captain), Toni Schürmann (Software), Max Harting (Hardware), and Henning Baumgartner (Hardware). We compete in the RoboCupJunior Soccer Entry League for the second time.
 
-On our first time competing in the Robocup we were seperate teams: Tux_3 (Alexander and Henning) and Tux_4 (Toni and Max). Both made it into the Top 5 and qualified for the German Open in Nuremberg. The competition in Nuremberg had good opponents, so sadly we didn't qualify for the European Championship.
+During our first time competing in RoboCup, we were separate teams: Tux_3 (Alexander and Henning) and Tux_4 (Toni and Max). Both teams made it into the top 5 and qualified for the German Open in Nuremberg. The competition in Nuremberg had strong opponents, so unfortunately we did not qualify for the European Championship.
 
-But these loses and wins didn't make us lose motivation, instead we fused into a team. We learned how to work together and soon we managed to make the second place in Berlin (qualification). Now we are preparing for the German open in Cologne, hoping we can qualify for the European Championship.
+However, these losses and wins did not make us lose motivation; instead, we merged into one team. We learned how to work together, and soon we managed to achieve second place in the Berlin qualification. Now we are preparing for the German Open in Cologne, hoping we can qualify for the European Championship.
 
 ---
 
