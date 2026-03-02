@@ -1,5 +1,12 @@
 # TEAM DESCRIPTION PAPER 
  
+## Short Team Summary
+
+Team Tux_3 competes in the RoboCupJunior Soccer Entry League and was formed in 2026 by merging two previously independent teams.
+
+In the 2025 season, the members competed separately as Tux_3 (Alexander and Henning) and Tux_4 (Max and Toni), both using LEGO-based robots. At the Berlin qualification tournament, Tux_3 achieved 2nd place and Tux_4 achieved 4th place. Both teams qualified for the German Championship in Nuremberg, where Tux_3 finished 8th (one match away from European qualification) and Tux_4 finished 13th.
+
+In 2026, the two teams combined their experience and formed a single team under the name Tux_3, redesigning the robot with fully custom 3D-printed components. At the Berlin qualification tournament 2026, the new team achieved 2nd place.
 
 ## Short Robot Description 
 
@@ -72,7 +79,14 @@ The software was developed with a focus on maintainability, clarity, and match r
 
 More about software in `/software/README.md`
 
- 
+## Achievements
+
+### 2025:
+- Berlin qualification: *2nd Place: Tux_3; 4th Place: Tux_4*
+- German Open Nuremberg: *8th Place: Tux_3; 12th Place: Tux_4*
+
+### 2026:
+- Berlin qualification: *2nd: Tux_3* 
 
 ## Challenges During the Season 
 
