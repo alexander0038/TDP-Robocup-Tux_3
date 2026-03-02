@@ -70,7 +70,7 @@ The software was developed with a focus on maintainability, clarity, and match r
 
  
 
-More about software in ‘/software/README.md’ 
+More about software in `/software/README.md`
 
  
 
