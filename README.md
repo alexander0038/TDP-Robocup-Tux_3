@@ -24,7 +24,7 @@ However, these losses and wins did not make us lose motivation; instead, we merg
 -  Strategy: `/software/Strategy.md`
 
 #### Team:
-- Team Description Paper: `/Tux_3_GO2026_tdp.md`
+- Team Description Paper: `/Tux_3_GO2026_tdp.pdf`
 - Team picture: `/Tux_3.png`
 
 
