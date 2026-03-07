@@ -15,6 +15,7 @@ However, these losses and wins did not make us lose motivation; instead, we merg
 - General information: `/Hardware/README.md`
 - Chassis: `/Hardware/Chassis Pictures`
 - Robot pictures: `/Hardware/Robot pictures`
+- CAD programs: `/Hardware/CAD programs`
 
 #### Software:
 -  General information: `/software/README.md`
