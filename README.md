@@ -1,7 +1,7 @@
 # TEAM TUX_3 ROBOCUP PAGE
 
-**Email:** tux3.gr@protonmail.com
-**Youtube:** https://www.youtube.com/@Tux_3_gr
+## Email: tux3.gr@protonmail.com
+## Youtube:** https://www.youtube.com/@Tux_3_gr
 
 ## General information about us:
 We are Tux_3, a team from Rahden, a small town in North Rhine-Westphalia near Bielefeld. Our team consists of **Alexander Belov (Software, Team Captain)**, **Toni Schürmann (Software)**, **Max Harting (Hardware)** and **Henning Baumgartner (Hardware)**. We compete in the RoboCupJunior Soccer Entry League for the second time.
