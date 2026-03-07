@@ -23,7 +23,7 @@ The transition from LEGO construction (2025 season) to fully custom 3D-printed p
 
 ## 2. Drive System
 
-Tux_3 uses a **two-motor differential drive system**.
+Tux_3 uses a **two-motor drive system**.
 
 ### Drive Motors
 - **Pololu 25Dx48L MP 12V motors**
@@ -36,8 +36,6 @@ This configuration provides:
 - Reliable turning behavior
 - Mechanical simplicity
 - High robustness in collisions
-
-The differential drive system was selected for reliability and mechanical efficiency within the Entry League constraints.
 
 ---
 
